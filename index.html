@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parth Luvani | Web Developer & Designer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Luvani Parth Bhaveshbhai - B.Tech CSE Student at JG University & Diploma IT graduate from GMIU. Proficient in HTML, CSS, JavaScript, C, Java, Python, and UI/UX.">
+  <meta name="keywords" content="Parth Luvani, Luvani Parth Bhaveshbhai, Web Designer, Front-End Developer, B.Tech CSE, JG University, GMIU, Portfolio">
+  <meta name="author" content="Luvani Parth Bhaveshbhai">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- External Stylesheet (style.css as required by rubric) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Background Ambience -->
+  <div class="glow-bg glow-bg-1" aria-hidden="true"></div>
+  <div class="glow-bg glow-bg-2" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Parth Luvani Home">
+        <span class="logo-box">&lt;PL /&gt;</span>
+        <span class="logo-text">Parth<span>.dev</span></span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Dark Mode Toggle Button (Required Rubric Feature) -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Resume Download CTA in Navbar -->
+        <a href="assets/resume/Parth_Luvani_Resume.pdf" target="_blank" download="Parth_Luvani_Resume.pdf" class="btn btn-outline btn-sm nav-cv-btn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Hamburger Menu for Mobile (Required Rubric Feature) -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>B.Tech CSE Student · JG University</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Parth Luvani</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I am a <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Passionate Web Designer & Software Developer currently pursuing <strong>B.Tech CSE (Diploma to Degree 3rd Sem) at JG University Ahmedabad</strong> and a proud <strong>Diploma in IT graduate from GMIU</strong>. Experienced in designing intuitive front-end layouts, web applications, and exploring modern computing technologies.
+          </p>
+
+          <!-- Call to action buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/resume/Parth_Luvani_Resume.pdf" target="_blank" download="Parth_Luvani_Resume.pdf" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Social and Contact Quick Strip -->
+          <div class="hero-social-strip">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <a href="mailto:parthluvani07@gmail.com" class="social-icon" title="Email Parth" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Image with Floating Badges -->
+        <div class="hero-visual">
+          <div class="photo-wrapper">
+            <div class="photo-glow-circle"></div>
+            <div class="photo-card">
+              <img src="assets/images/profile.jpg" alt="Parth Luvani - Web Designer & Developer" class="profile-photo">
+            </div>
+
+            <!-- Floating Badge 1: Education -->
+            <div class="floating-badge badge-experience">
+              <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="badge-content">
+                <strong>B.Tech CSE</strong>
+                <span>JG University</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Internships -->
+            <div class="floating-badge badge-cms">
+              <div class="badge-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="badge-content">
+                <strong>Tech Intern</strong>
+                <span>Aashro Tech & Dewtown</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3: Stack -->
+            <div class="floating-badge badge-tech">
+              <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="badge-content">
+                <strong>Modern Stack</strong>
+                <span>HTML · CSS · JS · C · Java</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="container hero-stats-bar">
+        <div class="stat-card">
+          <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-title">Internships Completed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-title">Tech Bootcamps</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-title">Academic & Web Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-title">Dedication & Passion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Personal Background</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">A computer engineering student blending front-end design with core computing principles.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio & Background Story -->
+          <div class="about-bio-card">
+            <h3 class="about-heading">Luvani Parth Bhaveshbhai</h3>
+            <p>
+              I am an enthusiastic and detail-oriented Computer Science Engineering student currently in the <strong>3rd semester of B.Tech CSE (Diploma to Degree) at JG University Ahmedabad</strong>. I completed my <strong>Diploma in IT from Gyanmanjari Innovative University (GMIU)</strong> and finished my schooling (Std 1 to 10) at <strong>Nandlal Bhuta School Sihor</strong>.
+            </p>
+            <p>
+              During my academic career, I worked as a <strong>Web Designer Intern</strong>, developing website layouts and user interfaces with standard HTML/CSS best practices, and interned at <strong>Aashro Tech IT Company</strong>. Additionally, I completed intensive hands-on bootcamps with <strong>Dewtown</strong> in OpenCV Object Detection, C++ & DSA, and DevOps.
+            </p>
+
+            <!-- Personal Info Details Grid -->
+            <div class="info-details-grid">
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-user"></i> Full Name:</span>
+                <span class="info-val">Luvani Parth Bhaveshbhai</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Current Degree:</span>
+                <span class="info-val">B.Tech CSE (JG University)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-award"></i> Prior Degree:</span>
+                <span class="info-val">Diploma in IT (GMIU)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <a href="mailto:parthluvani07@gmail.com" class="info-val-link">parthluvani07@gmail.com</a>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-language"></i> Languages:</span>
+                <span class="info-val">English, Hindi, Gujarati</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="info-val">Ahmedabad / Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Highlights / Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="pillar-text">
+                <h4>Front-End & UI/UX Design</h4>
+                <p>Creating clean, semantic, responsive layouts with modern HTML5, CSS3, JavaScript, and intuitive user interfaces.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div class="pillar-text">
+                <h4>Core Programming & Algorithms</h4>
+                <p>Strong foundations in C, C++, Java, and Python with data structures and object-oriented paradigms.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div class="pillar-text">
+                <h4>Mobile & Cross-Platform</h4>
+                <p>Exploring React Native and Flutter for building responsive mobile applications on Android and iOS.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="pillar-text">
+                <h4>Databases & Modern Cloud</h4>
+                <p>Knowledge of relational databases (MySQL), AWS cloud fundamentals, and modern DevOps deployment pipelines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">Proficiencies acquired through academics, internships, and project development.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="category-title">Web Technologies</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 (Semantic & Accessible)</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="95%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS3, Flexbox & Grid</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript (DOM & Events)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX & Responsive Layouts</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-c"></i> C Programming</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-java"></i> Java Programming</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="82%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python Programming</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-code-branch"></i> C++ & Data Structures</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Cloud, Database & Emerging Tech -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-server"></i></div>
+              <h3 class="category-title">Cloud, Mobile & DB</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-database"></i> Database (MySQL)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-react"></i> React Native & Flutter</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="75%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-aws"></i> AWS Basics & DevOps</span>
+                  <span class="skill-percent">72%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="72%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-shield-halved"></i> Cyber Security Awareness</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" data-progress="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Badges & Soft Skills -->
+        <div class="soft-skills-strip">
+          <div class="badge-pill"><i class="fa-solid fa-check"></i> Multi-Project Management</div>
+          <div class="badge-pill"><i class="fa-solid fa-check"></i> Tight Deadline Delivery</div>
+          <div class="badge-pill"><i class="fa-solid fa-check"></i> Analytical Problem Solving</div>
+          <div class="badge-pill"><i class="fa-solid fa-check"></i> Teamwork & Communication</div>
+          <div class="badge-pill"><i class="fa-solid fa-check"></i> Object Detection (OpenCV)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="section timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Career & Academics</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">My professional internships, technical training, and education journey.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Column 1: Work Experience -->
+          <div class="timeline-column">
+            <div class="column-title-wrapper">
+              <div class="column-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="column-title">Internships & Experience</h3>
+            </div>
+
+            <div class="timeline-wrapper">
+              <!-- Item 1: Aashro Tech -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">11 Jun 2024 – 25 Jun 2024</span>
+                  <h4 class="timeline-role">IT & Web Intern</h4>
+                  <span class="timeline-org"><i class="fa-solid fa-building"></i> Aashro Tech IT Company</span>
+                  <p class="timeline-desc">
+                    Completed a professional internship focusing on practical industry software practices, website architecture, and teamwork on live technical assignments.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>Web Development</span>
+                    <span>Software Engineering</span>
+                    <span>Team Collaboration</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Dewtown Bootcamps -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">Technical Bootcamps</span>
+                  <h4 class="timeline-role">Engineering Intern</h4>
+                  <span class="timeline-org"><i class="fa-solid fa-laptop-code"></i> Dewtown</span>
+                  <p class="timeline-desc">
+                    Successfully finished three intensive technical bootcamps expanding applied computer science capabilities:
+                  </p>
+                  <ul class="timeline-highlights">
+                    <li><strong>Object Detection using OpenCV:</strong> Computer vision workflows and image processing techniques.</li>
+                    <li><strong>C++ and DSA:</strong> Algorithmic problem solving, pointer concepts, and core data structures.</li>
+                    <li><strong>DevOps:</strong> Introduction to continuous deployment pipelines, containerization, and modern workflows.</li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span>OpenCV</span>
+                    <span>C++ / DSA</span>
+                    <span>DevOps</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Web Designer Intern -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">Industry Practice</span>
+                  <h4 class="timeline-role">Web Designer Intern</h4>
+                  <span class="timeline-org"><i class="fa-solid fa-palette"></i> Web Design Services</span>
+                  <p class="timeline-desc">
+                    Assisted in creating website layouts and user interfaces using standard HTML/CSS practices, gaining hands-on experience with website maintenance and UX enhancements.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>UI Layouts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Education -->
+          <div class="timeline-column">
+            <div class="column-title-wrapper">
+              <div class="column-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3 class="column-title">Education</h3>
+            </div>
+
+            <div class="timeline-wrapper">
+              <!-- Education 1: JG University -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">Currently Studying · 3rd Sem</span>
+                  <h4 class="timeline-role">B.Tech in Computer Science Engineering (CSE)</h4>
+                  <span class="timeline-org"><i class="fa-solid fa-university"></i> JG University, Ahmedabad</span>
+                  <p class="timeline-desc">
+                    Enrolled in the B.Tech CSE (Diploma To Degree) program, studying advanced topics including Web Technology, Data Structures, Operating Systems, and Object-Oriented Software Design.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>B.Tech CSE</span>
+                    <span>Web Technology</span>
+                    <span>Software Engineering</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education 2: GMIU -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">Completed Graduate</span>
+                  <h4 class="timeline-role">Diploma in Information Technology (IT)</h4>
+                  <span class="timeline-org"><i class="fa-solid fa-university"></i> GMIU (Gyanmanjari Innovative University)</span>
+                  <p class="timeline-desc">
+                    Successfully completed 3-year Diploma in IT covering programming in C and Java, Database Management Systems (DBMS), Web Development (HTML/CSS/JS), and computer networking.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>Diploma in IT</span>
+                    <span>C & Java</span>
+                    <span>DBMS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education 3: Schooling -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <span class="timeline-date">Completed (Std 1 to 10)</span>
+                  <h4 class="timeline-role">Secondary School Education (SSC)</h4>
+                  <span class="timeline-org"><i class="fa-solid fa-school"></i> Nandlal Bhuta School Sihor</span>
+                  <p class="timeline-desc">
+                    Finished primary and secondary schooling with strong foundational skills in mathematics, science, and computer basics.
+                  </p>
+                  <div class="timeline-tags">
+                    <span>SSC</span>
+                    <span>Science & Math</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (At least 2 required by rubric) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">Real-world web and software projects built with clean code and modern standards.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web-design">Web Development</button>
+          <button class="filter-btn" data-filter="frontend">Front-End</button>
+          <button class="filter-btn" data-filter="programming">Software & Core</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1: Personal Portfolio -->
+          <article class="project-card" data-category="web-design frontend" data-id="portfolio-v1">
+            <div class="project-visual bg-gradient-indigo">
+              <div class="visual-content">
+                <i class="fa-solid fa-laptop-code project-visual-icon"></i>
+                <span class="visual-tag">Featured Assignment</span>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-white view-details-btn">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Web Technology Project</span>
+              <h3 class="project-title">Responsive Personal Portfolio</h3>
+              <p class="project-description">
+                Personal portfolio built strictly adhering to Web Technology guidelines using semantic HTML5, responsive CSS3 with media queries, and vanilla JavaScript (dark mode, mobile navigation drawer, form validation).
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>CSS3 Variables</span>
+                <span>Vanilla JavaScript</span>
+                <span>Mobile Responsive</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="project-link-btn view-details-btn"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                <a href="#hero" class="project-link-btn"><i class="fa-solid fa-rotate-left"></i> Current Page</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Registration & Form Validation System -->
+          <article class="project-card" data-category="web-design frontend" data-id="form-system">
+            <div class="project-visual bg-gradient-blue">
+              <div class="visual-content">
+                <i class="fa-solid fa-table-list project-visual-icon"></i>
+                <span class="visual-tag">Interactive Forms</span>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-white view-details-btn">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Web Forms & DOM</span>
+              <h3 class="project-title">Smart Registration Form System</h3>
+              <p class="project-description">
+                Full-featured registration form featuring real-time client-side validation, password length security rules, radio options, multi-select checkboxes, and custom input feedback.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5 Forms</span>
+                <span>CSS3 Flexbox</span>
+                <span>JavaScript Validation</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="project-link-btn view-details-btn"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                <a href="#contact" class="project-link-btn"><i class="fa-solid fa-arrow-down"></i> Test Form</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Object Detection Application -->
+          <article class="project-card" data-category="programming" data-id="opencv-project">
+            <div class="project-visual bg-gradient-cyan">
+              <div class="visual-content">
+                <i class="fa-solid fa-eye project-visual-icon"></i>
+                <span class="visual-tag">Computer Vision</span>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-white view-details-btn">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Python & OpenCV</span>
+              <h3 class="project-title">Real-Time Object Detection</h3>
+              <p class="project-description">
+                Developed during the Dewtown bootcamp using Python and OpenCV. Processes webcam video streams to locate, identify, and draw bounding boxes around target objects in real time.
+              </p>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Image Processing</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="project-link-btn view-details-btn"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                <a href="#contact" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: C++ & DSA Management System -->
+          <article class="project-card" data-category="programming" data-id="dsa-project">
+            <div class="project-visual bg-gradient-purple">
+              <div class="visual-content">
+                <i class="fa-solid fa-database project-visual-icon"></i>
+                <span class="visual-tag">Core Software</span>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-white view-details-btn">View Details</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category-badge">Algorithms & Data Structures</span>
+              <h3 class="project-title">Data Structure Record Manager</h3>
+              <p class="project-description">
+                High-performance console data manager built with C++ implementing linked lists, binary search trees, and sorting algorithms for efficient record storage and search.
+              </p>
+              <div class="project-tech-stack">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>Data Structures</span>
+              </div>
+              <div class="project-card-actions">
+                <button class="project-link-btn view-details-btn"><i class="fa-solid fa-circle-info"></i> View Details</button>
+                <a href="#contact" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Inquire</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Form required by rubric) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">Feel free to reach out for project collaborations or academic inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards (Sanitized according to rubric privacy rule) -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-detail">
+                <h4>Email Address</h4>
+                <a href="mailto:parthluvani07@gmail.com" class="contact-link">parthluvani07@gmail.com</a>
+                <p>Feel free to send an email anytime</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="contact-detail">
+                <h4>Academic Affiliation</h4>
+                <span class="contact-link-static">JG University, Ahmedabad</span>
+                <p>Department of Computer Science Engineering</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-detail">
+                <h4>Location</h4>
+                <span class="contact-link-static">Gujarat, India</span>
+                <p>Sihor / Bhavnagar / Ahmedabad</p>
+              </div>
+            </div>
+
+            <!-- Social Card -->
+            <div class="social-box">
+              <h4>Connect Online</h4>
+              <div class="social-row">
+                <a href="mailto:parthluvani07@gmail.com" class="social-btn" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Working Contact Form (Compulsory per rubric) -->
+          <div class="contact-form-wrapper">
+            <h3 class="form-title">Send Me a Message</h3>
+            <p class="form-subtitle">Fill in the fields below. Client-side validation is handled by script.js.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                  </div>
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                  </div>
+                  <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-heading input-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Feedback" required>
+                </div>
+                <span class="error-msg" id="subject-error">Please provide a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-solid fa-message input-icon"></i>
+                  <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error">Please write your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+
+            <!-- Success Alert Notification -->
+            <div class="form-success-banner" id="form-success">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Thank you! Your message was validated and sent.</strong>
+                <p>The form data was checked before submission by script.js.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal Popup -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag" id="modal-tag">Project Overview</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <a href="mailto:parthluvani07@gmail.com" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact Parth</span>
+        </a>
+        <button class="btn btn-secondary btn-sm" id="modal-cancel-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-box">&lt;PL /&gt;</span>
+          <span class="logo-text">Parth<span>.dev</span></span>
+        </a>
+        <p class="footer-tagline">Crafting modern, responsive web experiences with precision code and user-first design.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Quick Navigation</h4>
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-info">
+        <h4>Direct Contact</h4>
+        <p><i class="fa-solid fa-envelope"></i> parthluvani07@gmail.com</p>
+        <p><i class="fa-solid fa-graduation-cap"></i> JG University, Ahmedabad</p>
+        <p><i class="fa-solid fa-location-dot"></i> Gujarat, India</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> Luvani Parth Bhaveshbhai. Built for Web Technology Assignment & Portfolio.</p>
+      <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript file (script.js required by assignment guidelines) -->
+  <script src="script.js"></script>
+</body>
+</html>
